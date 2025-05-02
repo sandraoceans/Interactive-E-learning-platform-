@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Developer - OceansTide</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="mailto:info@oceanstide.com"><i class="fas fa-envelope"></i> info@oceanstide.com</a>
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i> +256707477848</a>
+            </div>
+            <div class="top-right">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <select class="language-select">
+                    <option value="english">English</option>
+                    <option value="espanyol">Español</option>
+                    <option value="french">Français</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <h1 class="logo"><i class="fas fa-school"></i>OceansTide Academy</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="get-button">
+                    <a href="signup.html">Login / Sign Up</a>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-container">
+            <div class="developer-info">
+                <h2>Developer Contact</h2>
+                <div class="developer-card">
+                    <img src="../assets/images/kiddj.jpeg" alt="Developer" class="developer-avatar">
+                    <h3>Sandra Oceans</h3>
+                    <p class="developer-title">Lead Web Developer</p>
+                    <div class="developer-details">
+                        <p><i class="fas fa-envelope"></i> developer@oceanstide.com</p>
+                        <p><i class="fas fa-phone"></i> +256 707 477 848</p>
+                        <div class="developer-social">
+                            <a href="https://github.com/sandranakitto" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/sandranakitto" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="supportForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-logo">OceansTide Academy</h3>
+                <p>Empowering learners worldwide through interactive education</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Live Classes</a></li>
+                    <li><a href="#">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Student Forum</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 OceansTide Academy. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

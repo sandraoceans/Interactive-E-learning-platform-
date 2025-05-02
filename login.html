@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OceansTide Academy - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1><i class="fas fa-graduation-cap"></i> OceansTide Academy</h1>
+                <p>Empowering Education Through Technology</p>
+            </div>
+            
+            <form class="login-form" id="loginForm">
+                <div class="user-type">
+                    <label>
+                        <input type="radio" name="userType" value="Student" checked>
+                        Student
+                    </label>
+                    <label>
+                        <input type="radio" name="userType" value="parent">
+                        Parent
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <div class="login-footer">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <p class="create-account">Don't have an account? <a href="#">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userType = document.querySelector('input[name="userType"]:checked').value;
+            // Store the user type in localStorage
+            localStorage.setItem('userType', userType);
+            // Redirect to homepage
+            window.location.href = 'educ.html';
+        });
+    </script>
+</body>
+</html>
